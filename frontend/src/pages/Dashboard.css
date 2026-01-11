@@ -1,0 +1,160 @@
+.dashboard-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+}
+
+.dashboard-header {
+      margin-bottom: 3rem;
+}
+
+.dashboard-header h1 {
+      font-size: 3rem;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+}
+
+.subtitle {
+      color: var(--text-secondary);
+      font-size: 1.125rem;
+}
+
+.stats-grid {
+      margin-bottom: 3rem;
+}
+
+.stat-card {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem;
+}
+
+.stat-icon {
+      font-size: 3rem;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-primary);
+      border-radius: var(--radius-md);
+}
+
+.stat-info {
+      flex: 1;
+}
+
+.stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+}
+
+.stat-label {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+}
+
+.recent-campaigns h2 {
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+}
+
+.campaigns-list {
+      display: grid;
+      gap: 1.5rem;
+}
+
+.campaign-card {
+      padding: 1.5rem;
+}
+
+.campaign-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+}
+
+.campaign-header h3 {
+      font-size: 1.25rem;
+      color: var(--text-primary);
+}
+
+.campaign-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 1rem;
+}
+
+.campaign-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+}
+
+.campaign-stat .label {
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+}
+
+.campaign-stat .value {
+      color: var(--text-primary);
+      font-size: 1.25rem;
+      font-weight: 600;
+}
+
+.campaign-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+}
+
+.empty-state {
+      padding: 3rem;
+      text-align: center;
+      color: var(--text-secondary);
+}
+
+.loading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+}
+
+@media (max-width: 768px) {
+      .dashboard-content {
+            padding: 1rem;
+      }
+
+      .dashboard-header h1 {
+            font-size: 2rem;
+      }
+
+      .stat-card {
+            padding: 1.5rem;
+      }
+
+      .stat-icon {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+      }
+
+      .stat-value {
+            font-size: 2rem;
+      }
+
+      .campaign-stats {
+            flex-wrap: wrap;
+            gap: 1rem;
+      }
+}

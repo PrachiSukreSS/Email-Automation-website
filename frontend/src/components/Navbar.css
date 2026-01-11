@@ -1,0 +1,121 @@
+.navbar {
+      background: var(--bg-card);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+}
+
+.navbar-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.25rem;
+      transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+      transform: scale(1.05);
+}
+
+.brand-icon {
+      font-size: 1.75rem;
+}
+
+.navbar-links {
+      display: flex;
+      gap: 0.5rem;
+}
+
+.nav-link {
+      padding: 0.625rem 1.25rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      transition: all 0.3s ease;
+      font-weight: 500;
+      position: relative;
+}
+
+.nav-link:hover {
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+}
+
+.nav-link.active {
+      color: var(--text-primary);
+      background: var(--gradient-primary);
+}
+
+.navbar-user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+}
+
+.user-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+}
+
+.user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.125rem;
+}
+
+.user-name {
+      color: var(--text-primary);
+      font-weight: 500;
+}
+
+.btn-logout {
+      padding: 0.5rem 1rem;
+      background: var(--bg-tertiary);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+}
+
+.btn-logout:hover {
+      background: var(--error);
+      border-color: var(--error);
+}
+
+@media (max-width: 768px) {
+      .navbar-container {
+            padding: 0 1rem;
+      }
+
+      .navbar-links {
+            display: none;
+      }
+
+      .user-name {
+            display: none;
+      }
+}
