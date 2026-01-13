@@ -103,10 +103,13 @@ class CampaignBase(BaseModel):
     name: str
     template_id: int
 
-
 class CampaignCreate(CampaignBase):
-    contact_ids: List[int] = Field(default_factory=list)
+    contact_ids: Optional[List[int]] = Field(default_factory=list)
     scheduled_at: Optional[datetime] = None
+
+    class Config:
+        extra = "ignore"
+
 
 
 class CampaignUpdate(BaseModel):
