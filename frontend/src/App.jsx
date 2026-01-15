@@ -9,6 +9,8 @@ import Templates from './pages/Templates';
 import Campaigns from './pages/Campaigns';
 import Analytics from './pages/Analytics';
 
+console.log("API URL 👉", import.meta.env.VITE_API_URL);
+
 function App() {
   return (
     <AuthProvider>
